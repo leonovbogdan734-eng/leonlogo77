@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Логотип Маркет</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Логотип Маркет</h1>
+
+  <!-- Користувач -->
+  <div>
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Пароль">
+    <button id="signup-btn">Реєстрація</button>
+    <button id="login-btn">Вхід</button>
+    <button id="logout" style="display:none">Вийти</button>
+    <span id="user-email">Гість</span>
+  </div>
+
+  <!-- Баланс -->
+  <div>Баланс: $<span id="balance">0</span></div>
+
+  <!-- Поповнення балансу -->
+  <div id="add-balance-section" style="display:none">
+    <input id="balance-amount" type="number" placeholder="Сума для поповнення">
+    <button id="add-balance-btn">Поповнити баланс</button>
+  </div>
+
+  <!-- Додавання логотипів -->
+  <div id="add-logo-section" style="display:none">
+    <input id="logo-name" placeholder="Назва логотипу">
+    <input id="logo-price" type="number" placeholder="Ціна">
+    <input id="logo-image" placeholder="URL картинки">
+    <button id="add-logo-btn">Додати логотип</button>
+  </div>
+
+  <!-- Логотипи -->
+  <h2>Доступні логотипи:</h2>
+  <div id="logos"></div>
+
+  <!-- Історія покупок -->
+  <div id="purchase-history"></div>
+
+  <!-- Toast повідомлення -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
